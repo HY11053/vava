@@ -1,0 +1,28 @@
+<template name="footer">
+    <view class="footer footer-b mt10">
+        <view class="footer-con">
+            <view  class="logo"><image src="/images/m_200_72.png"></image></view>
+            <multiFormid><view class="mt15 f12 s-ccc"><text class="s-ccc">徐汇区徐虹中路20号4幢</text> Copyright© 2019-2020</view></multiFormid>
+        </view>
+        </view>
+    <view class="bottom-view">
+        <view class="zxNavBar">
+            <view class="zxnavbarcon">
+                <view  role="button" tabindex="0"  id="btn-open" class="zxHdImgcons side-tool" >
+                    <button class='contact-btn' open-type='contact'>
+                        <view class="zxHdImg">
+                            <image src="https://m.szhqzl.cn/frontend/images/hdimg2.jpg"></image>
+                        </view>
+                        <view class="zxHdName"   catchtap="telSubmit">
+                            <view class="zxHdName-peo">VaVa影像</view>
+                            <view class="pblock">在线客服<text>联系她</text></view>
+                        </view>
+                    </button>
+                </view>
+                <view class="mfcall js_popup" catchtap="makePhoneCall" data-phonenumber="13761777735">立即通话</view>
+                <view class="mfcsain js_popup" catchtap="telSubmit" >在线留言</view>
+            </view>
+        </view>
+    </view>
+    <!--<view class="side-tool"><image src="/images/wechat.png"></image><text>咨询</text></view>-->
+</template>

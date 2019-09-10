@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<import src="/templets/footer.wxml" />
+<import src="/templets/liuyan.wxml" />
+<view class="container">
+    <view class="lunbo">
+        <swiper indicator-dots="true"   autoplay="true" interval="5000" duration="1000">
+            <block wx:for="{{indexinfos.imagepics}}" wx:key="idx" wx:for-item="imagepic">
+                <swiper-item> <image src="{{imagepic}}" class="slide-image" /> </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <view class="ys">
+        <view class="im-container">
+            <view class="imageflx" catchtap="telSubmit"> <image src="{{indexinfos.navpics[0]}}"></image><view class="h5">01</view><view class="pstyle">{{indexinfos.navtitle1}}</view>  </view>
+            <view class="imageflx" catchtap="telSubmit"> <image src="{{indexinfos.navpics[1]}}"></image><view class="h5">02</view><view class="pstyle">{{indexinfos.navtitle2}}</view>  </view>
+            <view class="imageflx" catchtap="telSubmit"> <image src="{{indexinfos.navpics[2]}}"></image><view class="h5">03</view><view class="pstyle">{{indexinfos.navtitle3}}</view>  </view>
+        </view>
+        <button class="submit-primary" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"><view class="baoming" >{{indexinfos.buttonone}}</view></button>
+    </view>
+    <view class="ad">
+        <block wx:for="{{indexinfos.longpics}}" wx:key="idx" wx:for-item="longpic">
+            <image src="{{longpic}}" mode="widthFix"> </image>
+        </block>
+        <button class="submit-primary" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"><view class="baoming">{{indexinfos.buttontwo}}</view></button>
+    </view>
+    <view class="ad">
+        <block wx:for="{{indexinfos.longtwopics}}" wx:key="idx" wx:for-item="longtwopic">
+            <image src="{{longtwopic}}" mode="widthFix"> </image>
+        </block>
+    </view>
+    <template is="liuyan"  data="{{showModal:showModal}}" />
+    <!--新闻end-->
+    <template is="footer"  />
+</view>

@@ -1,0 +1,10 @@
+/* pages/article/article.wxss */
+#article-primary{padding: 0px; border-radius: 0px; margin: 0px; width: 100%; border:none; background: #fff;}
+#article-primary image{width: 100%; display: flex;}
+button::after {
+    border: none
+}
+.plain {
+    border: none;
+    border-color: transparent;
+}

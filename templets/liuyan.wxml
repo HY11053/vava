@@ -1,0 +1,28 @@
+<template name="liuyan">
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modalDlg" wx:if="{{showModal}}">
+    <view id="item52" class="clearfix">
+        <view class="item5box">
+            <view class="title">在线留言</view>
+            <form bindsubmit="formSubmitHandle2" report-submit="true">
+                <view class="inputbox">
+                    <input type="text" name="username"   placeholder="您的真实姓名" />
+                    <text>姓名：</text>
+                </view>
+                <view class="inputbox">
+                    <input type="number" name="iphone"  placeholder="电话是与您联系的重要方式" />
+                    <text>手机：</text>
+                </view>
+                <view class="inputbox">
+                    <input type="text" name="content"  placeholder="我对此很感兴趣，请联系我。" />
+                    <text>留言：</text>
+                </view>
+                <button form-type="submit" class="submitmessagebtn" >提交留言</button>
+            </form>
+        </view>
+    </view>
+    <form bindsubmit="saveFormid" id="saveFormid" report-submit="true">
+        <button  form-type="submit"><view class="popup_close"></view></button>
+    </form>
+</view>
+</template>

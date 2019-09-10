@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<import src="/templets/footer.wxml" />
+<import src="/templets/liuyan.wxml" />
+<view class="container">
+    <button id="article-primary" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"><image src="{{thisarticleinfos.litpic}}" mode="widthFix"></image></button>
+    <template is="liuyan"  data="{{showModal:showModal}}" />
+    <!--新闻end-->
+    <template is="footer"  />
+</view>

@@ -1,0 +1,10 @@
+.nobutton button {
+  margin: 0;
+  display: inline;
+  padding: 0;
+}
+
+ .nobutton button::after {
+  content: '';
+  display: none;
+}

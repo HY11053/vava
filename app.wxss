@@ -1,0 +1,203 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  box-sizing: border-box;
+}
+.clear{clear: both;}
+.bg-primary{ width: 100%; line-height: 80rpx;  height: 80rpx;  border-radius: 5rpx;  margin-top: 6rpx;  margin-bottom: 5rpx;  color: #E9EDEF;  background-color: #3ea49f;  border-color: #3ea49f; }
+.submit-primary{ width: 90%; line-height: 80rpx;  height: 80rpx;  border-radius: 50rpx;  margin-top: 6rpx;  margin-bottom: 5rpx;  color: #E9EDEF;  background-color: #d31215;  border-color: #d31215; margin: 0 auto;  margin-top: 20rpx; margin-bottom: 20rpx; }
+.submit-primary view.baoming{font-size: 36rpx; color: #fff; text-align: center; font-weight: bold; }
+.top-navbar{line-height: 0px; width: 100%;}
+.top-navbar image{width: 100%; height: 140rpx;}
+.bg-primary icon{ padding-left: 10rpx; padding-right: 10rpx; }
+.bg-primary text{font-size: 26rpx; color: #fff; }
+.lunbo{width: 100%;}
+.lunbo swiper{height:480rpx;}
+.lunbo swiper .swiper-item{  display: block;  height: 350rpx;}
+.slide-image{width: 100%;height: 480rpx;}
+.bottom-view{background: #ffffff;}
+.zxnavbarcon {background: #ffffff;	height: 120rpx;	position: fixed;	bottom: 0;	left: 0;	width: 100%;	/* padding-left: 0.13333333rem;*/}
+.zxnavbarcon .zxHdImgcons {	background: #fff;	width: 55.99%;	height:116rpx; padding-left: 1%;	float: left;	padding-top: 8rpx;	-webkit-appearance:none;	border:0;}
+.zxnavbarcon .zxHdImgcons .zxHdImg {	width: 100rpx;	height: 100rpx;	border-radius: 50%;	border: 1px solid #dcdcdc;	float: left; margin-right: 10rpx;}
+.zxnavbarcon .zxHdImgcons .zxHdImg image {	width: 100rpx;	height: 100rpx;	border-radius: 50%;}
+.zxHdName{float: left; display:flex;  flex-direction:column; }
+.zxnavbarcon .zxHdImgcons .zxHdName-peo {	text-align: left;	color: #000;		color: red; font-size: 32rpx; font-weight: bold; overflow:hidden;  text-overflow:ellipsis;  white-space:nowrap;}
+.zxnavbarcon .zxHdImgcons view.pblock {	text-align: left;	font-size: 28rpx;	line-height: 48rpx;	float: left;	color: #999;	margin-top:6rpx;	padding-left: 3rpx; display:flex;  flex-direction:row;}
+.zxnavbarcon .zxHdImgcons view.pblock text {	display: block;	text-align: center;	border: 1px solid #d80000;	height: 40rpx;	line-height:40rpx;	width: 80rpx;	color: #d80000;	float: right;	margin-left: 0.1rem;	font-size: 20rpx;}
+.zxnavbarcon .mfcall,.zxnavbarcon .mfcsain {	width: 21%;	height: 100%;	font-size: 28rpx; border-radius: 0;	color: #fff;	text-align: center;	float: right;	background: #D80000; line-height: 120rpx; 	-webkit-appearance:none;	border:0;}
+.zxnavbarcon .mfcsain {	background: #33bd57; float: right;}
+.wxParser-img{width: 100%; border-radius: 25rpx;}
+.mask{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 9000;
+  opacity: 0.7;
+}
+
+.modalDlg{
+  width: 580rpx;
+  height: 520rpx;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  margin: -370rpx 85rpx;
+  background-color: #fff;
+  border-radius: 36rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.popup_close {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  background: url(https://www.szhqzl.cn/frontend/images/popup_close.png) no-repeat;
+  background-size: contain;
+  top: 9px;
+  right: 10px;
+}
+#saveFormid button{position: absolute; width: 20px;  height: 20px;  overflow: hidden;top: 9px;  right: 10px; padding: 0; margin: 0}
+#saveFormid button::after {
+  border: none
+}
+#saveFormid .plain {
+  border: none;
+  border-color: transparent;
+}
+#item52 {
+  margin-top: 20rpx;
+  width: 580rpx;
+}
+#item52 .item5box {
+  box-sizing: border-box;
+  padding: 30rpx;
+}
+#item52 .item5box .formicon {
+  float: left;
+  width: 30rpx;
+  height: 30rpx;
+  display: block;
+  background-size:30rpx;
+  margin-right: 14rpx;
+}
+#item52 .item5box .title {
+  font-size: 36rpx;
+  color: #bc0d03;
+  line-height: 40rpx;
+  font-weight: bold;
+  text-align: center;
+  overflow: visible;
+}
+
+#item52 .item5box .lysm{
+  font-size: 24rpx;
+  line-height: 32rpx;
+  color: #999999;
+  padding-top: 20rpx;
+}
+
+#item52 .item5box input{
+  width: 100%;
+  height: 70rpx;
+  border-radius: 8rpx;
+  border: 1px solid #C0C6CC;
+  padding: 10rpx;
+  padding-left: 110rpx;
+  position: absolute;
+  top:0;
+  left:0 ;
+  font-size: 26rpx;
+  box-sizing: border-box;
+}
+#item52 .item5box .verification_form input{
+  padding-left: 140rpx;
+}
+#item52 .item5box .verification_form .verification_form_submit{
+  position: absolute;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 8rpx;
+  border: 1px solid #C0C6CC;
+  padding-left: 110rpx;
+  top: 0;
+  right: 0;
+  padding: 4rpx;
+  margin-top:0;
+  left: auto;
+  box-sizing: border-box;
+  border-left: 0;
+  background: #FCEBEC;
+  color: #DC0011;
+  font-size: 24rpx;
+}
+#item52 .item5box .inputbox{
+  margin-top: 40rpx;
+  position: relative;
+  height: 60rpx;
+  box-sizing: border-box;
+  overflow: visible;
+}
+#item52 .item5box .inputbox .tip{
+  display: none;
+  color: #F14E41;
+}
+#item52 .item5box .inputbox text{
+  position: absolute;
+  top: 50%;
+  margin-top: -16rpx;
+  left: 30rpx;
+  font-size: 24rpx;
+  color: #666;
+}
+#item52 .item5box input:focus{
+  border: 1px solid #dc0011;
+}
+#item52 .item5box .agreebox{
+  width: 22rpx;
+  height: 22rpx;
+  border: 1px solid #4494E4;
+  float: left;
+  margin: 5rpx 1rpx 5rpx 0;
+  border-radius: 0.02rpx;
+}
+
+#item52 .item5box .agreetext{
+  margin-top: 40rpx;
+  font-size: 22rpx;
+  color: #666;
+}
+#item52 .item5box form{font-size: .12rpx;}
+#item52 .item5box .submitmessagebtn{
+  margin-top: 40rpx;
+  width: 100%;
+  height: 60rpx;
+  background-color: #DC0011;
+  border-radius: 10rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 24rpx;
+  border: none;
+}
+#item52 .item5box .submitmessagebtn:active{
+  background-color: #F2182A;
+}
+.footer-b {padding: 0; margin-bottom: 70rpx;}
+.footer-con { padding: 30rpx 30rpx 70rpx 30rpx;}
+.s-ccc {  color: #ccc; font-size: 24rpx; text-align: center;}
+.logo{width: 115px; margin: 0 auto;}
+.footer .logo image {  width: 115px; height: 41px}
+.side-tool {}
+.side-tool image{border-radius: 50%;}
+.side-tool  button{overflow: auto; background-color:#fff; line-height: 32rpx; padding-left: 0; padding-right: 0;}
+.side-tool text{}
+.side-tool  button::after {  border: none;}
+.side-tool  .plain {  border: none;  border-color: transparent;}
